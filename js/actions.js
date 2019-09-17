@@ -40,14 +40,14 @@ function error(message){
 	createNegativeNotification(message, 9);
 }
 /*
- * Refreshes the HTML based on the 
+ * Refreshes the HTML based on the
  * chat history array which is a list
  * of chat messages sent from the user
  * and eliza.
  */
 function displayChat(){
 	//console.log("displayChat");
-	
+
 	var html = '';
 	if(chatHistory.length == 0){
 		startElizaChat();
@@ -74,13 +74,13 @@ function displayChat(){
  * HTML for Eliza's message
  */
 function getElizaMessageHTML(message){
-	return '<div class="chat-message-outter-wrapper"><img src="./assets/imgs/guy.png" class="chat-message-icon"><div class="chat-message-wrapper eliza-message"><p class="chat-message-text text-left">' + message + '</p><p class="chat-user-text">Eliza</p></div></div>';
+	return '<div class="chat-message-outter-wrapper"><img src="./assets/imgs/venus.png" class="chat-message-icon"><div class="chat-message-wrapper eliza-message"><p class="chat-message-text text-left">' + message + '</p><p class="chat-user-text">Venus</p></div></div>';
 }
 /*
  * HTML for User's message
  */
 function getUserMessageHTML(message){
-	return '<div class="chat-message-outter-wrapper text-right"><div class="chat-message-wrapper you-message"><p class="chat-message-text text-left">' + message + '</p><p class="chat-user-text">You</p></div><img src="./assets/imgs/laptop.png" class="chat-message-icon"></div>';
+	return '<div class="chat-message-outter-wrapper text-right"><div class="chat-message-wrapper you-message"><p class="chat-message-text text-left">' + message + '</p><p class="chat-user-text">You</p></div><img src="./assets/imgs/leader.png" class="chat-message-icon"></div>';
 }
 /*
  * Empty user send textbox

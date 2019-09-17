@@ -14,11 +14,11 @@
 .chat-message-wrapper{
 	max-width: 80%;
 	display: inline-block;
-	
+
 	border-radius: 6px;
 }
 .eliza-message{
-	background-color: #F6CECE;
+	background-color: #CEECF5;
 }
 .you-message{
 	background-color: #CEECF5;

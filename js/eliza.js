@@ -2,48 +2,49 @@ var responses = {
 	"NOTFOUND" : {
 				 "weight" : 0,
 				 "responses" : [
-						"What does that suggest to you?",
-						"I see.",
-						"I'm not sure I understand you fully.",
+						"Where else does that show up in your life?",
+						"What else is coming up for you?",
+						"What else?",
 						"Can you elaborate?",
-						"That is quite interesting.",
+						"Ok, so what's next?",
 						"Please tell me more.",
-						"Let's change focus a bit... Tell me about your family.",
+						"Let's change focus a bit... Tell me about your vision.",
 						"Can you elaborate on that?",
-						"Why do you say that *?"
+						"Why do you say that *?",
+						"What is a goal you are working on?",
+						"What would it look like if you were living your vision?",
+						"In six months, if things were going exactly the way you want, what would you see?",
+						"What is one step you could take right now that would indicate you were moving forward?"
 					]
 				},
 	"sorry" : {
 				 "weight" : 1,
-				 "responses" : ["Please don't apologize.", "Apologies are not necessary.", "Apologies are not required."]},
+				 "responses" : ["No apology necessary, this is a judgement free zone.", "No need to apologize, I am standing for your greatness."]},
 	"always" : {
 				 "weight" : 1,
-				 "responses" : ["Can you think of a specific example?"]},
+				 "responses" : ["Can you share a specific example?"]},
 	"because" : {
 				 "weight" : 6,
-				 "responses" : ["Is that the real reason?"]},
+				 "responses" : ["Is that the real thing holding you back?"]},
 	"maybe" : {
 				 "weight" : 1,
-				 "responses" : ["You  don't seem very certain."]},
+				 "responses" : ["You don't seem very certain, could you write that again powerfully?"]},
 	"i think" : {
 				 "weight" : 2,
-				 "responses" : ["Do you really think so?"]},
+				 "responses" : ["Do you really think so, or do you know so?"]},
 	"you" : {
 				 "weight" : 1,
-				 "responses" : ["We were discussing you, not me.","Why do you say that about me?","Why do you care whether I \"*\"?"]},
+				 "responses" : ["Thank you, but this isn't about me.","Why do you say that?","Why do you care whether I \"*\"?"]},
 	"yes" : {
 				 "weight" : 1,
-				 "responses" : ["Why do you think so?","You seem quite positive."]
+				 "responses" : ["Why do you think so?","You seem quite positive.", "You seem sure of yourself.", "Ok, so what's next?"]
 				},
 	"no" : {
 				 "weight" : 1,
-				 "responses" : ["Why not?","Are you sure?"]},
-	"i am" : {
-				 "weight" : 1,
-				 "responses" : ["I am sorry to hear you are *.","How long have you been *?","Do you believe it is normal to be *?","Do you enjoy being *?","Did you come to me because you are *?"]},
+				 "responses" : ["Why not?","Are you sure?", "Is that a powerful no?"]},
 	"i feel" : {
 				 "weight" : 4,
-				 "responses" : ["Tell me more about such feelings.","Do you often feel *?","Do you enjoy feeling *?","Why do you feel that way?"]},
+				 "responses" : ["Tell me more about what is opening up for you and your feelings.","Do you often feel *?","Why do you feel that way?"]},
 	"family" : {
 				 "weight" : 16,
 				 "responses" : ["Tell me more about your family.","How do you get along with your family?","Is your family important to you?"]},
@@ -68,78 +69,66 @@ var responses = {
 	"wife" : {
 				 "weight" : 16,
 				 "responses" : ["Tell me more about your family.","How do you get along with your family?","Is your family important to you?"]},
+	"money" : {
+				 "weight" : 16,
+				 "responses" : ["Tell me more about your relationship with money.", "Is money important to you?", "Are you living your financial vision?"]},
+	"time" : {
+				 "weight" : 16,
+				 "responses" : ["Tell me more about your relationship with time.", "Is time important to you?", "Are you satisfied with how you spend your time?"]},
 	"child" : {
 				 "weight" : 16,
 				 "responses" : ["Did you have close friends as a child?","What is your favorite childhood memory?","Do you remember any dreams or nightmares from childhood?","Did the other children sometimes tease you?","How do you think your childhood experiences relate to your feelings today?"]},
 	"dreamed" : {
 				 "weight" : 4,
-				 "responses" : ["What does that dream suggest to you?","Do you dream often?","What people appear in your dreams?","Are you disturbed by your dreams?","Have you ever fantasized * while you were awake?"]},
-	"nightmare" : {
-				 "weight" : 3,
-				 "responses" : ["What does that dream suggest to you?","Do you dream often?","What persons appear in your dreams?","Are you disturbed by your dreams?"]},
+				 "responses" : ["What does that dream suggest to you?","Do you dream often?", "What is your biggest dream that you are committed to accomplishing?"]},
 	"hello" : {
 				 "weight" : 1,
-				 "responses" : ["Hi again! How is going?","How are you today? Any problems?"]},
+				 "responses" : ["Hi again! How is going?","How are you today? Any blockers?"]},
 	"good afternoon" : {
 				 "weight" : 1,
-				 "responses" : ["Hi again! How is going?","How are you today? Any problems?"]},
+				 "responses" : ["Hi again! How is going?","How are you today? Any blockers?"]},
 	"good morning" : {
 				 "weight" : 1,
-				 "responses" : ["Hi again! How is going?","How are you today? Any problems?"]},
+				 "responses" : ["Hi again! How is going?","How are you today? Any blockers?"]},
 	"hi" : {
 				 "weight" : 1,
-				 "responses" : ["Hi again! How is going?","How are you today? Any problems?"]},
+				 "responses" : ["Hi again! How is going?","How are you today? Any blockers?"]},
 	"goodbye" : {
 				 "weight" : 1,
-				 "responses" : ["Goodbye.  Thank you for talking to me."]},
+				 "responses" : ["Goodbye. Thank you for talking to me."]},
 	"i need" : {
 				 "weight" : 5,
-				 "responses" : ["Why do you need *?","Would it really help you to get *?","Are you sure you need *?"],},
-	"why don\'t you" : {
-				 "weight" : 3,
-				 "responses" : ["Do you really think I don't *?","Perhaps eventually I will *.","Do you really want me to *?"],},
+				 "responses" : ["Why do you need *?","Would it support you to get *?","Are you sure you need *?", "What will open up for you when you get *?"],},
 	"why can\'t i" : {
 				 "weight" : 3,
 				 "responses" : ["Do you think you should be able to *?","If you could *, what would you do?","I don't know -- why can't you *?","Have you really tried?"],},
 	"i can\'t" : {
 				 "weight" : 4,
-				 "responses" : ["How do you know you can't \"*\"?","Perhaps you could * if you tried.","What would it take for you to *?"]},
+				 "responses" : ["How do you know you can't \"*\"?", "What would it take for you to *?"]},
 	"perhaps" : {
 				 "weight" : 1,
-				 "responses" : ["How do you know you can't \"*\"?","Perhaps you could * if you tried.","What would it take for you to *?"]},
+				 "responses" : ["How do you know you can't \"*\"?", "What would it take for you to *?"]},
 	"remember" : {
 				 "weight" : 5,
-				 "responses" : ["Do you often think of *?","Does thinking of * bring anything else to mind","What else do you recollect?","Why do you recollect * just now?","What in the present situation reminds you of *?","What is the connection between me and *?"]},
-	"do you remember" : {
-				 "weight" : 6,
-				 "responses" : ["Do you think I would forget?","Yes I do remember *."]},
+				 "responses" : ["Do you often think of *?","Does thinking of * bring anything else to mind","What else do you recollect?","What in the present situation reminds you of *?"]},
 	"if" : {
 				 "weight" : 3,
-				 "responses" : ["Do you think it\'s likely that *?","Do you wish that *?","What do you know about *?","Really, if *?"]},
+				 "responses" : ["Do you think it\'s likely that *?","Do you wish that *?","What do you know about *?","Really, if *?", "Ok - so what is your first step?"]},
 	"name" : {
 				 "weight" : 15,
 				 "responses" : ["I am not interested in names.","I\'ve told you before, I do not care about names -- please continue."]},
-	"another language" : {
-				 "weight" : 1,
-				 "responses" : ["I told you before, I don't understand languages that are not English."]},
-	"computer" : {
-				 "weight" : 12,
-				 "responses" : ["Do computers worry you?","Why do you mention computers?","Could you expand on how computers and * are related?","What do you think machines have to do with your problem?","Don't you think computers can help people?","What about machines worrys you?","What do you think about machines?"]},
 	"are you" : {
 				 "weight" : 2,
-				 "responses" : ["Why are you interested in whether I am * or not?","Would you prefer if I weren't *?","Perhaps I am * in your fantasies.","Do you sometimes think I am *?"]},
+				 "responses" : ["This isn't about me, let's refocus on you. What's another goal you are committed to taking action on?"]},
 	"are" : {
 				 "weight" : 1,
 				 "responses" : ["Did you think they might not be *?","Would you like it if they were not *?","What if they were not *?","Possibly they are *."]},
 	"your" : {
 				 "weight" : 1,
-				 "responses" : ["Why are you concerned over my *?","What about your own *?","Are you worried about someone else's *?","Really, my *?"]},
+				 "responses" : ["Why are you concerned over my *?","What about your own *?","Are you worried about someone else's *?"]},
 	"was i" : {
 				 "weight" : 2,
 				 "responses" : ["What if you were *?","Do you think you were *?","Were you *?","What would it mean if you were *?","What does * suggest to you?"]},
-	"was you" : {
-				 "weight" : 2,
-				 "responses" : ["Would you like to believe I was *?","What suggests that I was *?","What do you think?"]},
 	"i desire" : {
 				 "weight" : 1,
 				 "responses" : ["What would it mean to you if you got it?","Why do you want it?","What if you never got it?"]},
@@ -159,7 +148,7 @@ var responses = {
 				"responses" : ["What makes you bored?"]
 			}
 
-	
+
 };
 
 /*
@@ -169,16 +158,6 @@ var responses = {
 var synonyms = {
 	"sorry" : [
 		"apologise"
-	],
-	"another language" : [
-		"deutsch",
-		"francais",
-		"french",
-		"italiano",
-		"italian",
-		"espanol",
-		"spanish",
-		"xforeign"
 	],
 	"dreamed" : [
 		"dream",
@@ -199,14 +178,14 @@ var synonyms = {
 };
 /*
  * List of special case
- * 
+ *
  * "i am *1-3* happy" -> "i am happy"
  *
  * Ex.
  * User> I am extremely happy
  * this becomes "I am happy"
  * Eliza> Why are you happy?
- * 
+ *
  * Ex.
  * User> I am sad because i wish i was happy
  * This is changed because the 1-3 represents this
@@ -214,25 +193,24 @@ var synonyms = {
  * "happy"
  */
 var responsesWithWildcard = {
-	"i am *1-3* happy" : {	
+	"i am *1-3* happy" : {
 							weight : 20,
 							replacementWord : "i am happy"
 						},
-	"i am *1-3* sad" : {	
+	"i am *1-3* sad" : {
 							weight : 20,
 							replacementWord : "i am sad"
 						},
-	"i am *1-3* bored" : {	
+	"i am *1-3* bored" : {
 							weight : 20,
 							replacementWord : "i am bored"
 						}
-	
+
 };
 
 
-var initialMessages = ["Hello. How are you feeling today?"];
-//var initialMessages = ["Hi there, welcome to my office. I'm here to chat about anything. What's on your mind?", "How do you do. Please tell me your problem.","Please tell me what's been bothering you.", "Is something troubling you?", "Hello. How are you doing today?"];
-var endChatTerms = ["goodbye","I have to leave","I have to leave.","quit","bye","exit"];
+var initialMessages = ["Welcome to Conscious Coaching! I am Venus. What's coming up for you?", "Welcome to Conscious Coaching! I am Venus. Where in your life are you calling for coaching?", "Welcome to Conscious Coaching! I am Venus. Life is now, let's get started. What is coming up for you?"];
+var endChatTerms = ["quit","bye","exit"];
 var chatHistory = [];
 var keywords = [];
 var conversationOver = false;
@@ -248,7 +226,7 @@ var usedResponses = [];
  * meaningful is found first.
  */
 function startElizaChat(){
-	
+
 	//sorts keywords (keywords and similar word) into array based on weight.
 	getKeywordsByWeight();
 
@@ -264,7 +242,7 @@ function startElizaChat(){
  * weight. Then finds all of the similar words and
  * their weight (based on response keywords). Then
  * it sorts the whole list.
- * 
+ *
  * This function can be more efficient.
  */
 function getKeywordsByWeight(){
@@ -280,7 +258,7 @@ function getKeywordsByWeight(){
 		}
 	}
 
-	
+
 	//Add similar words
 	for(var wordWithResponse in synonyms){
 		if(wordWithResponse in tempKeywords){
@@ -300,13 +278,13 @@ function getKeywordsByWeight(){
 		if(!weights.includes(weight)){
 			weights.push(weight);
 		}
-		
+
 		tempKeywords[word] = weight;
 	}
 
 	//Sorts them based on weight going from highest to lowest
 	weights = weights.sort(sortNumber);
-	
+
 	//Populates keywords for final result to be used throughout
 	for(var i = 0;i < weights.length;i++){
 		var weight = weights[i];
@@ -329,7 +307,7 @@ function getKeywordsByWeight(){
  * this function manipulates the UI.
  */
 function sendElizaNewMessage(newMessage){
-	
+
 	//Add to UI
 	chatHistory.push({ isEliza : false, content : newMessage });
 	displayChat();
@@ -365,7 +343,7 @@ function analyze(newMessage){
 	//Check all
 	for (var i = 0;i < keywords.length;i++) {
 		var word = keywords[i].word;
-		
+
 		if(endChatTerms.contains(newMessage)){
 			conversationOver = true;
 			newMessage = "goodbye";
@@ -376,33 +354,33 @@ function analyze(newMessage){
 		//Also checks if the newMessage contains all parts in proper order and following
 		//the rules
 		if(word.indexOf("*") != -1 && containsKeywordWithWildcard(newMessage, word) && !found){
-			
+
 			response = selectResponse(findBasicKeywordFromKeywordWithWildcard(word));
 			found = true;
 
 		}else if((newMessage.indexOf(word) != -1 && newMessage.length == word.length || newMessage.indexOf(word + " ") != -1 || newMessage.indexOf(" " + word) != -1) && !found){
 			//Check to see if the keyword is in the sentence
 			//Ex. input is "Hi" or "This and more" or "Hi doc!"
-			
+
 			//This picks a response
 			response = selectResponse(word);
-			
+
 			//Check for wild card
 			found = true;
 
 		}
-		
+
 
 		if(found && response.indexOf("*") !== -1){
 				//Wild card exists so sub in the phrase
 				//Ex. I had a dream about my dog.
 				//Dream is the keyword
-				
+
 
 				//Right of the keyword in the incoming message
 				var remainingInput = newMessage.substring(newMessage.indexOf(word) + word.length+1, newMessage.length);
 				//RemainingInput: [about my dog]
-				
+
 				//Right of the wildcard in the response
 				var rightOfWildcardInResponse = response.substring(response.indexOf("*")+1);
 				//Right of Wildcard In Response: [ while you were awake?]
@@ -431,7 +409,7 @@ function analyze(newMessage){
 		if(found){
 			break;
 		}
-		
+
 
 	}
 
@@ -447,7 +425,7 @@ function analyze(newMessage){
  * - if contains wild card
  * - The responses passed in hold the highest value
  * - Checks if the response has been used already
- * 
+ *
  * I decided to add an additional(duplicate) response
  * instead of removing because I dont know how long the
  * conversation will go on for.
@@ -466,7 +444,7 @@ function selectResponse(word){
 		potentialResponses = findResponsesForSimilarWord(word);
 	}
 
-	
+
 	var newResponses = [];
 	var originalResponsesSize = potentialResponses.responses.length;
 
@@ -488,7 +466,7 @@ function selectResponse(word){
 }
 /*
  * Process input by making input lower case
- * and remove unnessary punctuation. 
+ * and remove unnessary punctuation.
  */
 function processInput(message){
 	message = message.toLowerCase();
@@ -498,12 +476,12 @@ function processInput(message){
 /*
  * Replaces the context of words, flipping
  * the voice from the user to eliza.
- * 
+ *
  * It's split into an array so it doesn't
  * replace back and forth. Ex. me->i i->me
  */
 function replaceWords(input){
-	
+
 	var wordsForReplacement = [];
 	wordsForReplacement["i"] = "you";
 	wordsForReplacement["you"] = "i";
@@ -522,8 +500,8 @@ function replaceWords(input){
 	wordsForReplacement["me"] = "you";
 	//Added in after testing
 	wordsForReplacement["always had"] = "always have";
-	
-	
+
+
 	var inputSplit = input.split(" ");
 
 	//Was having an overrite issue
@@ -564,8 +542,8 @@ function removePunctuation(message){
 	message = message.replace("?","");
 	message = message.replace("!","");
 	message = message.replace(":","");
-	
-	
+
+
 	return message;
 }
 
@@ -609,15 +587,15 @@ function findResponsesForSimilarWord(word){
 }
 
 /*
- * Checks to see if the keyword exists properly 
- * so "I am happy" is in proper order. Also 
+ * Checks to see if the keyword exists properly
+ * so "I am happy" is in proper order. Also
  * checks to against runs so only so many words
  * are between "am" and "happy". So
- * "I am extremely happy" but 
+ * "I am extremely happy" but
  * "I am sad because I am happy" would fail.
  */
 function containsKeywordWithWildcard(input, keywordsWithWildcardStr){
-	
+
 	var responseWildcardObj = getResponseWildcardInfo(keywordsWithWildcardStr);
 
 	var numberOfWordsInWildcard = 0;
@@ -625,7 +603,7 @@ function containsKeywordWithWildcard(input, keywordsWithWildcardStr){
 	var inputArray = input.split(" ");
 	for(var i = 0;i < inputArray.length;i++){
 		var currentWord = inputArray[i];
-		
+
 		//if the word is not a keyword, add it. and we are in the wildcard
 		if((foundKeywords >= responseWildcardObj.minNumWords && foundKeywords <= responseWildcardObj.maxNumWords) && !responseWildcardObj.keywords.contains(currentWord)){
 			numberOfWordsInWildcard++;
@@ -651,7 +629,7 @@ function containsKeywordWithWildcard(input, keywordsWithWildcardStr){
 		//console.log("Does not follow wildcard rules");
 		return false;
 	}
-	
+
 	return true;
 }
 
@@ -673,13 +651,13 @@ function findBasicKeywordFromKeywordWithWildcard(keywordsWithWildcardStr){
  */
 function getResponseWildcardInfo(keywordsWithWildcardStr){
 	var keywordsWithWildcard = keywordsWithWildcardStr.split(" ");
-	
+
 	var rulesInSingleStr = "";
 	var positionOfWordBeforeOfWildcard = 0;
 	var positionOfWordAfterOfWildcard = 0;
 	for(var i = 0;i < keywordsWithWildcard.length;i++){
 		var str = keywordsWithWildcard[i];
-		
+
 		positionOfWordAfterOfWildcard = i;
 		//gets the position of wild card
 		//since its going to be removed, we know
@@ -703,7 +681,7 @@ function getResponseWildcardInfo(keywordsWithWildcardStr){
 	//Now know the upper and lower bounds for the number of accepted words in the wildcard
 	var minNumWords = rulesInSingleStr.substring(0,1);
 	var maxNumWords = rulesInSingleStr.substring(2);
-	
+
 
 	var obj = {
 		minNumWords : minNumWords,
@@ -722,7 +700,7 @@ function getResponseWildcardInfo(keywordsWithWildcardStr){
  */
 Array.prototype.remove = function ( needle ) {
 	var index = this.indexOf(needle);
-	
+
 	if(index > -1){
 		this.splice(index, 1);
 		return this;

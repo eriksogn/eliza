@@ -4,6 +4,8 @@ var currentNotifications = [];
  * Run on page shows
  */
 $(document).ready(function(){
+
+	/*
 	setTimeout(function(){
 		createInfoNotification("Run the demo by sending \"run demo1\"",9);
 	}, 1000);
@@ -13,6 +15,7 @@ $(document).ready(function(){
 	setTimeout(function(){
 		createInfoNotification("If you like this project, please go star it!",6);
 	}, 3000);
+	*/
 
 	/*
 	 * Checks every seconds
@@ -92,10 +95,10 @@ function refershNotifications(){
 		}
 
 		var currentNotificationHTML = '<div class="notification-wrapper ' + typeClass + '"><p class="notification-text ' + typeText + '">' + currentNotifications[i].message + '</p></div>';
-	
-		
 
-		
+
+
+
 
 		if(currentNotifications[i].cyclesRemaining > 0){
 			// console.log(currentNotifications[i]);
@@ -103,6 +106,6 @@ function refershNotifications(){
 			html += currentNotificationHTML;
 		}
 	}
-	
+
 	$("#notification-area").html(html);
 }
