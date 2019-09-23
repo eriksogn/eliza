@@ -209,7 +209,7 @@ var responsesWithWildcard = {
 };
 
 
-var initialMessages = ["Welcome to Conscious Coaching! I am Venus. What's coming up for you?", "Welcome to Conscious Coaching! I am Venus. Where in your life are you calling for coaching?", "Welcome to Conscious Coaching! I am Venus. Life is now, let's get started. What is coming up for you?"];
+var initialMessages = ["Welcome to your ConsciousCoach, I am Venus. What's coming up for you?", "Welcome to ConsciousCoach! I am Venus. Where in your life are you calling for coaching?", "Welcome to Conscious Coaching! I am Venus. Life is now, let's get started. Where in your life is calling for action?"];
 var endChatTerms = ["quit","bye","exit"];
 var chatHistory = [];
 var keywords = [];
